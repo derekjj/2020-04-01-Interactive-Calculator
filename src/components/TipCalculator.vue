@@ -78,7 +78,7 @@ export default {
     },
     tipAmount() {
       if(this.form.tipStyle === "percent"){
-        return this.form.billAmount / this.form.tip
+        return this.form.billAmount * (this.form.tip/100)
       } else {
         return this.form.tip
       }
