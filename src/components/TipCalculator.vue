@@ -37,7 +37,7 @@
               type="number"
               required
               placeholder="0.00")
-    .row.pt-5
+    .row.pt-5(v-show="grandTotal > 0 && isFinite(grandTotal)")
       .col-12
         .row.pb-5
           .col-2
